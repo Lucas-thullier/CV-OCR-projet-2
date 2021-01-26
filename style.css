@@ -1,0 +1,277 @@
+body {
+	max-height: 1675px;
+	max-width: 1200px;
+	display: flex;
+	margin: 0 auto;
+	background-image: url('pictures/background-image.jpg');
+
+}
+aside {
+    width: 33%;
+    background-color: #ffa45c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pictureBloc {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0px;
+    margin: auto;
+}
+
+#identityPicture {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.asideLabel {
+    align-self: stretch;
+    text-align: center;    
+    line-height:200%;
+    margin: 0px;
+    background-color: #5d5d5a;
+    color: #ffa45c;
+}
+
+#contactContent {
+	list-style: none;
+	margin: 0px;
+    padding: 20px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* La balise br dans ce contexte 
+* ne passe pas la validation w3c  
+* donc petit tricks
+*/ 
+#contactContent li :nth-child(1) {
+    margin-bottom: 0;
+}
+
+#contactContent li :nth-child(2) {
+    margin-top: 0;
+}
+
+/* ****************** */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+#aboutMeContent {
+	padding: 7% 13%;
+	line-height: 150%;
+    text-align: justify;
+    margin: 0px;
+    flex: 2;
+}
+
+#interestContent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+    font-size: 3rem;
+    align-items: center;
+    flex: 0.5;
+}
+
+section {
+	width: 67%;
+    background-color: #fff4e3;
+    box-shadow: 9px 0px 11px #5d5d5a;
+    margin: 0 auto;
+    
+}
+
+#nameBloc {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 14%;
+    padding-left: 4em;
+}
+#myName {
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+#firstName {
+    color: #ffa45c;
+}
+
+#myJob {
+    font-size: 1.5rem;
+}
+
+#subtitleEffect {
+    border-bottom: #ffa45c 3px solid;
+}
+
+.mainTable {
+    padding-right: 5em;
+    padding: 0 10%;
+    margin-bottom: 3%;
+}
+
+.mainTableTitle {
+    display: flex;
+    flex-direction: row;
+    border-bottom: #ffa45c solid;
+    margin-bottom: 3%;
+}
+.faSection {
+    font-size:1.3rem;
+    align-self: center;
+    flex: 0.5;
+}
+
+.mainTitle {
+    flex: 4;
+}
+
+.mainTableBody {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rowLifeEvent {
+    display:flex;
+    flex-direction: row;
+}
+
+.dotDateAndPlace {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.dotDateAndPlace i {
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.dateAndPlace {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.activity {
+    padding-left: 0px;
+    flex:3;
+}
+.activityList {
+    list-style: none;
+}
+
+.activity ul li {
+    padding-bottom: 1.2%;
+}
+
+#recoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#recoBox ul {
+    padding-left: 0px;
+    list-style: none;
+}
+#lastReference {
+    padding-right: 10em;
+}
+
+@media screen and (max-width:1200px) {
+    body  {
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+
+    aside {
+        width: 50em;
+        background-color: #ffa45c;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        box-shadow: 9px 0px 11px #5d5d5a;
+    }
+    
+    #interestContent {
+        padding: 7% 5%;
+    }
+
+    section {
+        width: 50em;
+    }
+
+    #lastReference {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body  {
+        max-width: 360px;
+       
+    }
+
+    aside {
+        background-color: #ffa45c;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #identityPicture {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #nameBloc {
+        padding: 0px 2em;
+    }
+    .mainTableTitle {
+        margin-top: 15%;
+    }
+
+    
+
+    .dotDateAndPlace {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    .activity {
+        padding-left: 0px;
+        flex:2;
+    }
+
+    #recoBox {
+        flex-wrap: wrap;
+    }
+
+    #lastReference {
+        padding-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+    #pictureBloc {
+        display: none;
+    }
+}
